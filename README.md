@@ -1,3 +1,22 @@
+# Getting Started
+
+This project is built with Vite (French for _quick_), in particular the React+TypeScript Vite template (see below).
+
+```bash
+npm i
+npm run dev
+```
+
+The only piece of config you'll need is an Open AI account and an API key. Simply add it to your `.env`:
+
+```bash
+export VITE_APP_OPEN_AI_KEY=<YOUR_OPEN_AI_KEY>
+```
+
+:warning: This project is meant for personal, local use only. Deploying this project would expose your API credentials. Open AI prevents this kind of use, which we bypass with the `dangerouslyAllowBrowser: true` parameter.
+
+:bulb: Vite automatically pulls the `.env` file into your environment, accessible anywhere in the project with `import.meta.env.<ENV_VAR_NAME>`.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
