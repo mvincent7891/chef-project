@@ -94,7 +94,7 @@ function App() {
           messages={messages}
           sendMessage={(message) => {
             sendMessage(message, handleSpeak);
-            setMessages((m) => [...m, formatMessage(message, "Tony")]);
+            setMessages((m) => [...m, formatMessage(message, "You")]);
           }}
         />
       </div>

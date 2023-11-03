@@ -1,5 +1,3 @@
-import { Message } from "../features/Chat/Bubble";
-
 // Format a message which will be displayed in the chat (to be distinguished from
 // messages sent or received from the LLM)
 export const formatMessage = (content: string, sender: string) => {
@@ -7,7 +5,7 @@ export const formatMessage = (content: string, sender: string) => {
     sender,
     message: content,
     sentAt: new Date(),
-    inbound: sender === "You",
+    inbound: !(sender === "You"),
   };
 };
 
