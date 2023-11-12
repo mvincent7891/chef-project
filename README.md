@@ -1,6 +1,6 @@
 # Getting Started
 
-This project is built with Vite (French for _quick_), in particular the React+TypeScript Vite template (see below).
+This project is built using Vite (French for _quick_), in particular the React+TypeScript Vite template (see below).
 
 ```bash
 npm i
